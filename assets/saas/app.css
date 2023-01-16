@@ -369,6 +369,7 @@
 }
 .collection__row {
   display: flex;
+  margin-right: 20px;
 }
 .collection__img {
   width: 100%;
