@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/saas/bootstrap.css">
+    <link rel="stylesheet" href="assets/saas/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/saas/all.min.css">
+    <link rel="stylesheet" href="assets/saas/app.css">
+    <link rel="stylesheet" href="assets/js/app.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <title>Fashion</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <!-- Site topbar -->
+        <div class="site-header__topbar">
+            <div class="container">
+                <div class="site-header__topbar-container">
+                    <!-- Topbar Left -->
+                    <div class="site-header__topbar-left">
+                        <select class="site-header__topbar-left-language">
+                            <option value="1">ENGLISH</option>
+                            <option value="2">BANGLA</option>
+                        </select>
+                        <div class="site-header__devider"></div>
+                        <select class="site-header__topbar-left-currency">
+                            <option value="1">USD</option>
+                            <option value="2">BDT</option>
+                        </select>
+                        <div class="site-header__devider"></div>
+                        <a href="#" class="site-header__topbar-left-offer-link">
+                            <p class="site-header__topbar-left-offertxt">Free Shipping For All Orders Of $200</p>
+                        </a>
+                    </div>
+                    <!-- Topbar right -->
+                    <div class="site-header__topbar-right">
+                        <a href="#" class="site-header__topbar-right-track-link">
+                            <p class="site-header__topbar-right-track">Track Your Order</p>
+                        </a>
+                        <div class="site-header__devider"></div>
+                        <div class="site-header__topbar-right-newsletter">
+                            <i class="fa-regular fa-envelope site-header__topbar-right-newsletter-icon"></i>
+                            <a href="#" class="site-header__topbar-right-newsletter-link">Newsletter</a>
+                        </div>
+                        <div class="site-header__devider"></div>
+                        <div class="site-header__topbar-right-social-link">
+                            <a href="#" class="site-header__topbar-right-social-icon"><i
+                                    class="fa-brands fa-facebook-f site-header__topbar-right-social-icon-color"></i></a>
+                            <a href="#" class="site-header__topbar-right-social-icon"><i
+                                    class="fa-brands fa-twitter site-header__topbar-right-social-icon-color"></i></a>
+                            <a href="#" class="site-header__topbar-right-social-icon"><i
+                                    class="fa-brands fa-vimeo-v site-header__topbar-right-social-icon-color"></i></a>
+                            <a href="#" class="site-header__topbar-right-social-icon"><i
+                                    class="fa-brands fa-linkedin-in site-header__topbar-right-social-icon-color"></i></a>
+                            <a href="#" class="site-header__topbar-right-social-icon"><i
+                                    class="fa-solid fa-envelope site-header__topbar-right-social-icon-color"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Searchbar -->
+        <div class="container">
+            <div class="site-header__searchbar">
+                <!-- Site logo -->
+                <div class="site-header__logo">
+                    <a href="#"><img src="/static/media/logo.svg" alt="site logo" class="site-header__logo-link"></a>
+                </div>
+                <!-- Searchbar -->
+                <div class="site-header__search-box">
+                    <div class="form-group has-search">
+                        <span class="fa fa-search form-control-feedback site-header__search-icon"></span>
+                        <input type="text" class="form-control site-header__input-field"
+                            placeholder="Find your product">
+                    </div>
+                </div>
+                <!-- Wishlist & Cart -->
+                <div class="site-header__searchbar-right">
+                    <i class="fa-regular fa-heart site-header__searchbar-right-icon"></i>
+                    <a href="#" class="site-header__wishlist">Wishlist (0)</a>
+                    <i class="fa-solid fa-cart-shopping site-header__searchbar-right-icon"></i>
+                    <a href="#" class="site-header__cart">Cart (0)</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <div class="container">
+            <div class="site-header__menu">
+                <div class="site-header__menu-sub">
+                    <div class="site-header__mega-menu">
+                        <i class="fa-solid fa-bars site-header__menu-icon"></i>
+                        <a href="#" class="site-header__categories-txt">All Categories</a>
+                        <i class="fa-solid fa-chevron-right site-header__arrow"></i>
+                    </div>
+                    <nav id="primary_nav_wrap">
+                        <ul>
+                            <li class="current-menu-item"><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a>
+                                <ul>
+                                    <li><a href="#">Sub Menu 1</a></li>
+                                    <li><a href="#">Sub Menu 2</a></li>
+                                    <li><a href="#">Sub Menu 3</a></li>
+                                    <li><a href="#">Sub Menu 4</a>
+                                        <ul>
+                                            <li><a href="#">Deep Menu 1</a>
+                                                <ul>
+                                                    <li><a href="#">Sub Deep 1</a></li>
+                                                    <li><a href="#">Sub Deep 2</a></li>
+                                                    <li><a href="#">Sub Deep 3</a></li>
+                                                    <li><a href="#">Sub Deep 4</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Deep Menu 2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Sub Menu 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Product</a>
+                                <ul>
+                                    <li><a href="#">Sub Menu 1</a></li>
+                                    <li><a href="#">Sub Menu 2</a></li>
+                                    <li><a href="#">Sub Menu 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Blog</a>
+                                <ul>
+                                    <li class="dir"><a href="#">Sub Menu 1</a></li>
+                                    <li class="dir"><a href="#">Sub Menu 2</a>
+                                        <ul>
+                                            <li><a href="#">Category 1</a></li>
+                                            <li><a href="#">Category 2</a></li>
+                                            <li><a href="#">Category 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Sub Menu 3</a></li>
+                                    <li><a href="#">Sub Menu 4</a></li>
+                                    <li><a href="#">Sub Menu 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="site-header__free-shipping">
+                    <p class="site-header__free-shipping-text">Free Shipping on Orders $500+</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--==================================-->
+    <!--=            Hero Section        =-->
+    <!--==================================-->
+    <section class="hero">
+        <div class="hero__hero-image">
+            <div class="container hero__hero-text">
+                <h1 class="hero__hero-header">Minimal Fashion<br>
+                    Girl’s T-Shirt.</h1>
+                <a href="#" class="hero__hero-btn">Explore Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!--==================================-->
+    <!--=            gallery Section     =-->
+    <!--==================================-->
+    <section class="gallery">
+        <div class="gallery__grid-container">
+            <div class="gallery__item1"><img src="/static/media/image.png" alt="image"></div>
+            <div class="gallery__grid-right">
+                <div class="gallery__item2"><img src="/static/media/image-1.png" alt="image"></div>
+                <div class="gallery__item3"><img src="/static/media/image-2.png" alt="image"></div>
+            </div>
+            <div class="gallery__item4"><img src="/static/media/image-3.png" alt="image"></div>
+        </div>
+    </section>
+
+    <!--==================================-->
+    <!--=            card Section     =-->
+    <!--==================================-->
+    <section class="card-section">
+        <div class="container">
+            <div class="card-section__full">
+                <div class="card-section__left">
+                    <div class="card-section__image">
+                        <img src="/static/media/image-card.png" alt="">
+                    </div>
+                    <div class="card-section__text">
+                        <p class="card-section__paragraph">Spring 2022</p>
+                        <h1 class="card-section__header">Minimal Fashion<br>
+                            Girl’s Cloth.
+                        </h1>
+                        <a href="#" class="card-section__link">All Product</a>
+                    </div>
+                </div>
+
+                <div class="card-section__right">
+                    <div class="card-section__right-top">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa-solid fa-wallet card-section__wallet"></i><br>
+                                <h6 class="card-title">Wallet and
+                                    Bags</h6>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa-solid fa-wallet card-section__wallet"></i><br>
+                                <h6 class="card-title">Beach Slippers</h6>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa-solid fa-wallet card-section__wallet"></i><br>
+                                <h6 class="card-title">Sunglass & Eyewear</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- bottom part -->
+                    <div class="card-section__right-bottom">
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa-solid fa-wallet card-section__wallet"></i><br>
+                                <h6 class="card-title">Summer Shorts</h6>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa-solid fa-wallet card-section__wallet"></i><br>
+                                <h6 class="card-title">Travel Accessories</h6>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <i class="fa-solid fa-wallet card-section__wallet"></i><br>
+                                <h6 class="card-title">Shoes and Trainers</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--==================================-->
+    <!--=      COLLECTION Section        =-->
+    <!--==================================-->
+    <section class="collection">
+        <div class="container">
+            <p class="collection__text">Collections</p>
+            <h1 class="collection__header">Populer Collections</h1>
+            <div class="collection__row">
+                <div class="col-md-3">
+                    <div class="collection__product">
+                        <img class="collection__img" src="/static/media/product-1.png" alt="product">
+
+                        <div class="collection__product-bottom text-center">
+                            <p>Armani</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <h3 class="collection__product-header-txt">Ladies Black Handbag</h3>
+                            <h5 class="collection__product-price">68.00$ <strike>$80.00</strike></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="collection__product">
+                        <img class="collection__img" src="/static/media/product-2.png" alt="product">
+
+                        <div class="collection__product-bottom text-center">
+                            <p>Armani</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <h3 class="collection__product-header-txt">New Spring Long Sleeve</h3>
+                            <h5 class="collection__product-price">68.00$ <strike>$80.00</strike></h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="collection__product">
+                        <img class="collection__img" src="/static/media/product-3.png" alt="product">
+                        <div class="collection__product-bottom text-center">
+                            <p>Armani</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <h3 class="collection__product-header-txt">Polin Seashell Sundress</h3>
+                            <h5 class="collection__product-price">68.00$ <strike>$80.00</strike></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="collection__product">
+                        <img class="collection__img" src="/static/media/product-4.png" alt="product">
+                        <div class="collection__product-bottom text-center">
+                            <p>Armani</p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <h3 class="collection__product-header-txt">Quilted Gilet With Hoodi</h3>
+                            <h5 class="collection__product-price">68.00$ <strike>$80.00</strike></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

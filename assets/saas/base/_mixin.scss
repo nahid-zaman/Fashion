@@ -1,0 +1,25 @@
+// button
+@mixin fashionBtn {
+    background: $primaryColorOrange;
+    border: none;
+    transition: ease-in-out 0.3s;
+    font-weight: 600;
+    font-size: 18px;
+    outline: none;
+    text-decoration: none;
+    color: white;
+    padding: 19px 25px;
+
+    &:hover {
+        color: white;
+        cursor: pointer;
+        box-shadow: 0px 3px 20px rgba(31, 141, 237, 0.3);
+    }
+}
+
+@mixin cardEffect{
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0px 10px 10px rgba(0, 18, 78, 0.1);
+    }
+}
