@@ -369,12 +369,34 @@
 }
 .collection__row {
   display: flex;
+}
+.collection__item {
   margin-right: 20px;
+  position: relative;
+}
+.collection__offer-txt {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.collection__offer-txt-number {
+  background-color: #2EBB0A;
+  font-size: 12px;
+  padding: 1px 10px;
+  color: #fff;
+  margin-right: 4px;
+}
+.collection__offer-txt-name {
+  background-color: #F8702C;
+  font-size: 12px;
+  padding: 1px 10px;
+  color: #fff;
 }
 .collection__img {
   width: 100%;
 }
-.collection .fa-solid {
+.collection__icon-color {
   color: #F8702C;
   font-size: 15px;
 }
@@ -386,4 +408,114 @@
 .collection__product-price {
   font-size: 15px;
   color: #E82222;
+}
+.collection__btn-cart {
+  background: #F8702C;
+  border: none;
+  transition: ease-in-out 0.3s;
+  font-weight: 600;
+  font-size: 18px;
+  outline: none;
+  text-decoration: none;
+  color: white;
+  padding: 19px 25px;
+}
+.collection__btn-cart:hover {
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 3px 20px rgba(31, 141, 237, 0.3);
+}
+.collection__btn {
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+}
+
+/*----------------------------------------------------------------
+>>> SELL SECTION:
+----------------------------------------------------------------*/
+.sell__full {
+  display: flex;
+  padding-top: 100px;
+}
+.sell__photo-left {
+  padding: 20px;
+  background: #F6F6F6;
+  transform: matrix(0.99, -0.11, 0.1, 0.99, 0, 0);
+}
+.sell__photo-right {
+  padding: 20px;
+  background: #F6F6F6;
+  transform: matrix(0.99, 0.11, -0.1, 0.99, 0, 0);
+}
+.sell__txt {
+  padding-top: 40px;
+  padding-left: 45px;
+  padding-right: 30px;
+}
+.sell__offer-txt {
+  padding-right: 45px;
+}
+.sell__txt-stroke1 {
+  font-size: 60px;
+  color: white;
+  opacity: 0.1;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #666666;
+}
+.sell__txt-stroke2 {
+  font-size: 60px;
+  color: white;
+  opacity: 0.4;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #666666;
+}
+.sell__txt-stroke3 {
+  font-size: 60px;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #00124E;
+}
+.sell__up-to {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0px;
+  color: #00124E;
+}
+.sell__middle-txt {
+  display: flex;
+  margin: 0px;
+}
+.sell__offer30 {
+  line-height: 5px;
+  font-size: 70px;
+  font-weight: 800;
+  color: #00124E;
+}
+.sell__offer-off {
+  font-size: 30px;
+  font-weight: 600;
+  color: #F8702C;
+}
+.sell__code {
+  font-size: 24px;
+  font-weight: 400;
+  color: #666666;
+  padding: 15px 0px;
+}
+.sell__btn-offer {
+  background: #F8702C;
+  border: none;
+  transition: ease-in-out 0.3s;
+  font-weight: 600;
+  font-size: 18px;
+  outline: none;
+  text-decoration: none;
+  color: white;
+  padding: 19px 25px;
+}
+.sell__btn-offer:hover {
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 3px 20px rgba(31, 141, 237, 0.3);
 }/*# sourceMappingURL=app.css.map */

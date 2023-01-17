@@ -362,9 +362,7 @@
         border: 1px solid rgba(0, 18, 78, 0.1);
     }
 
-    &__image {
-
-    }
+    &__image {}
 
     &__text {
         padding: 100px 40px 0px 30px;
@@ -393,7 +391,7 @@
 
     &__right-top {
         display: flex;
-        margin-bottom: 20px;    
+        margin-bottom: 20px;
     }
 
     .card {
@@ -406,12 +404,12 @@
         @include cardEffect;
     }
 
-    .card-title{
+    .card-title {
         padding-top: 10px;
         color: $headerFontColor;
     }
 
-    .card-body{
+    .card-body {
         padding: 0px;
     }
 
@@ -427,11 +425,11 @@
 /*----------------------------------------------------------------
 >>> COLLECTION SECTION:
 ----------------------------------------------------------------*/
-.collection{
+.collection {
 
     padding-top: 100px;
 
-    &__text{
+    &__text {
         text-align: center;
         color: $primaryColorOrange;
         font-size: 16px;
@@ -439,7 +437,7 @@
         padding-bottom: 10px;
     }
 
-    &__header{
+    &__header {
         text-align: center;
         color: $headerFontColor;
         font-size: 31px;
@@ -447,28 +445,153 @@
         padding-bottom: 30px;
     }
 
-    &__row{
+    &__row {
         display: flex;
-        margin-right: 20px;
     }
 
-    &__img{
+    &__item {
+        margin-right: 20px;
+        position: relative;
+    }
+
+    &__offer-txt {
+        display: flex;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    &__offer-txt-number {
+        background-color: #2EBB0A;
+        font-size: 12px;
+        padding: 1px 10px;
+        color: #fff;
+        margin-right: 4px;
+    }
+
+    &__offer-txt-name {
+        background-color: $primaryColorOrange;
+        font-size: 12px;
+        padding: 1px 10px;
+        color: #fff;
+    }
+
+    &__img {
         width: 100%;
     }
 
-    .fa-solid{
+    &__icon-color {
         color: $primaryColorOrange;
         font-size: 15px;
     }
 
-    &__product-header-txt{
+    &__product-header-txt {
         font-size: 18px;
         font-weight: 700;
         padding-top: 10px;
     }
 
-    &__product-price{
+    &__product-price {
         font-size: 15px;
         color: #E82222;
+    }
+
+    &__btn-cart {
+        @include fashionBtn;
+    }
+
+    &__btn {
+        text-decoration: none;
+        font-size: 18px;
+        color: #fff;
+    }
+}
+
+/*----------------------------------------------------------------
+>>> SELL SECTION:
+----------------------------------------------------------------*/
+.sell {
+    &__full {
+        display: flex;
+        padding-top: 100px;
+    }
+
+    &__photo-left {
+        padding: 20px;
+        background: #F6F6F6;
+        transform: matrix(0.99, -0.11, 0.1, 0.99, 0, 0);
+    }
+
+    &__photo-right {
+        padding: 20px;
+        background: #F6F6F6;
+        transform: matrix(0.99, 0.11, -0.1, 0.99, 0, 0);
+    }
+
+    &__txt {
+        padding-top: 40px;
+        padding-left: 45px;
+        padding-right: 30px;
+    }
+
+    &__offer-txt{
+        padding-right: 45px;
+    }
+
+    &__txt-stroke1 {
+        font-size: 60px;
+        color: white;
+        opacity: 0.1;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #666666;
+    }
+
+    &__txt-stroke2 {
+        font-size: 60px;
+        color: white;
+        opacity: 0.4;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #666666;
+    }
+
+    &__txt-stroke3 {
+        font-size: 60px;
+        color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #00124E;
+    }
+
+    &__up-to {
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0px;
+        color: $headerFontColor;
+    }
+    
+    &__middle-txt{
+        display: flex;
+        margin: 0px;
+    }
+    &__offer30 {
+        line-height: 5px;
+        font-size: 70px;
+        font-weight: 800;
+        color: $headerFontColor;
+    }
+    &__offer-off{
+        font-size: 30px;
+        font-weight: 600;
+        color: $primaryColorOrange;
+    }
+
+    &__code{
+        font-size: 24px;
+        font-weight: 400;
+        color: $paragrapghColor;
+        padding: 15px 0px;
+    }
+
+    &__btn-offer{
+        @include fashionBtn;
     }
 }
