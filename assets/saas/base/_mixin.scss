@@ -19,6 +19,7 @@
 
 @mixin cardEffect{
     &:hover {
+        color: $primaryColorOrange;
         cursor: pointer;
         box-shadow: 0px 10px 10px rgba(0, 18, 78, 0.1);
     }

@@ -330,6 +330,7 @@
   margin-right: 20px;
 }
 .card-section .card:hover {
+  color: #F8702C;
   cursor: pointer;
   box-shadow: 0px 10px 10px rgba(0, 18, 78, 0.1);
 }
@@ -396,8 +397,13 @@
 .collection__img {
   width: 100%;
 }
+.collection__product-txt {
+  line-height: 0px;
+  padding-top: 25px;
+  color: #666666;
+}
 .collection__icon-color {
-  color: #F8702C;
+  color: #FF9933;
   font-size: 15px;
 }
 .collection__product-header-txt {
@@ -409,7 +415,15 @@
   font-size: 15px;
   color: #E82222;
 }
+.collection__icon-cart {
+  margin-top: -8px;
+  width: 25px;
+  height: 25px;
+}
 .collection__btn-cart {
+  padding-top: 30px;
+}
+.collection__btn {
   background: #F8702C;
   border: none;
   transition: ease-in-out 0.3s;
@@ -420,15 +434,10 @@
   color: white;
   padding: 19px 25px;
 }
-.collection__btn-cart:hover {
+.collection__btn:hover {
   color: white;
   cursor: pointer;
   box-shadow: 0px 3px 20px rgba(31, 141, 237, 0.3);
-}
-.collection__btn {
-  text-decoration: none;
-  font-size: 18px;
-  color: #fff;
 }
 
 /*----------------------------------------------------------------
@@ -451,9 +460,21 @@
 .sell__txt {
   padding-top: 40px;
   padding-left: 45px;
-  padding-right: 30px;
+  padding-right: 45px;
+  position: relative;
+}
+.sell__txt::after {
+  position: absolute;
+  content: "";
+  background: rgba(0, 18, 78, 0.1);
+  width: 2px;
+  height: 210px;
+  top: 55px;
+  right: 15px;
 }
 .sell__offer-txt {
+  padding-top: 45px;
+  padding-left: 40px;
   padding-right: 45px;
 }
 .sell__txt-stroke1 {
@@ -479,20 +500,21 @@
 .sell__up-to {
   font-size: 24px;
   font-weight: 600;
-  margin: 0px;
   color: #00124E;
+  line-height: 25px;
 }
 .sell__middle-txt {
   display: flex;
-  margin: 0px;
 }
 .sell__offer30 {
-  line-height: 5px;
+  margin-left: -3px;
+  line-height: 0px;
   font-size: 70px;
   font-weight: 800;
   color: #00124E;
 }
 .sell__offer-off {
+  margin-top: -28px;
   font-size: 30px;
   font-weight: 600;
   color: #F8702C;
@@ -501,7 +523,7 @@
   font-size: 24px;
   font-weight: 400;
   color: #666666;
-  padding: 15px 0px;
+  padding: 30px 0px 20px 0px;
 }
 .sell__btn-offer {
   background: #F8702C;
@@ -518,4 +540,41 @@
   color: white;
   cursor: pointer;
   box-shadow: 0px 3px 20px rgba(31, 141, 237, 0.3);
+}
+
+/*----------------------------------------------------------------
+>>> RETURN SECTION:
+----------------------------------------------------------------*/
+.return {
+  padding-top: 100px;
+}
+.return__full-part {
+  display: flex;
+}
+.return__first-part {
+  display: flex;
+  border: 1px;
+  border: 1px solid rgba(0, 18, 78, 0.1);
+  padding-right: 10px;
+}
+.return__icon {
+  margin-top: 46px;
+  margin-left: 25px;
+  margin-right: 15px;
+  stroke: 3px;
+  stroke: #F8702C;
+}
+.return__title {
+  padding-top: 55px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #00124E;
+  line-height: 0px;
+}
+.return__paragraph {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666666;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }/*# sourceMappingURL=app.css.map */

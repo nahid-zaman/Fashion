@@ -266,7 +266,7 @@
                         </div>
                         <img class="collection__img img-fluid" src="/static/media/product-1.png" alt="product">
                         <div class="collection__product-bottom text-center">
-                            <p>Armani</p>
+                            <p class="collection__product-txt">Armani</p>
                             <i class="collection__icon-color fa-solid fa-star"></i>
                             <i class="collection__icon-color fa-solid fa-star"></i>
                             <i class="collection__icon-color fa-solid fa-star"></i>
@@ -287,7 +287,7 @@
                         <img class="collection__img img-fluid" src="/static/media/product-2.png" alt="product">
 
                         <div class="collection__product-bottom text-center">
-                            <p>Armani</p>
+                            <p class="collection__product-txt">Armani</p>
                             <i class="collection__icon-color fa-solid fa-star"></i>
                             <i class="collection__icon-color fa-solid fa-star"></i>
                             <i class="collection__icon-color fa-solid fa-star"></i>
@@ -302,8 +302,24 @@
                             <img src="/static/media/image_03.png" alt="">
                         </div>
                         <div class=" collection__btn-cart text-center">
-                            <i class="fa-solid fa-bag-shopping"></i>
-                            <a href="#" class="collection__btn">Add to Cart</a>
+                            <a href="#" class="collection__btn">
+                                <!-- SVG for Add to cart BAG ICON -->
+                                <svg class="collection__icon-cart" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.25 6.39167V5.58334C6.25 3.70834 7.75833 1.86667 9.63333 1.69167C11.8667 1.47501 13.75 3.23334 13.75 5.42501V6.57501"
+                                        stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M7.49998 18.3334H12.5C15.85 18.3334 16.45 16.9917 16.625 15.3584L17.25 10.3584C17.475 8.32508 16.8916 6.66675 13.3333 6.66675H6.66664C3.10831 6.66675 2.52498 8.32508 2.74998 10.3584L3.37498 15.3584C3.54998 16.9917 4.14998 18.3334 7.49998 18.3334Z"
+                                        stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M12.9129 9.99992H12.9204" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.07878 9.99992H7.08626" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Add to Cart</a>
                         </div>
                     </div>
                 </div>
@@ -315,7 +331,7 @@
                         </div>
                         <img class="collection__img img-fluid" src="/static/media/product-3.png" alt="product">
                         <div class="collection__product-bottom text-center">
-                            <p>Armani</p>
+                            <p class="collection__product-txt">Armani</p>
                             <i class="collection__icon-color fa-solid fa-star"></i>
                             <i class="collection__icon-color fa-solid fa-star"></i>
                             <i class="collection__icon-color fa-solid fa-star"></i>
@@ -333,7 +349,7 @@
                         </div>
                         <img class="collection__img img-fluid" src="/static/media/product-4.png" alt="product">
                         <div class="collection__product-bottom text-center">
-                            <p>Armani</p>
+                            <p class="collection__product-txt">Armani</p>
                             <i class="collection__icon-color fa-solid fa-star"></i>
                             <i class="collection__icon-color fa-solid fa-star"></i>
                             <i class="collection__icon-color fa-solid fa-star"></i>
@@ -373,6 +389,82 @@
                 </div>
                 <div class="sell__photo-right">
                     <img src="/static/media/image-angel_02.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================================-->
+    <!--=          RETURN Section        =-->
+    <!--==================================-->
+    <section class="return">
+        <div class="container">
+            <div class="return__full-part">
+                <div class="return__first-part">
+                    <!-- SVG ICON for 30 days return -->
+                    <svg class="return__icon" width="40" height="24" viewBox="0 0 34 28" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M8.01479 25.9997H22.7749C27.8672 25.9997 32 21.7398 32 16.4911C32 11.2423 27.8672 6.98242 22.7749 6.98242H2.47974"
+                            stroke="#F8702C" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M6.72324 11.7368L2 6.86842L6.72324 2" stroke="#F8702C" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <div class="return__text">
+                        <h2 class="return__title">30 Days Returns</h2>
+                        <p class="return__paragraph">For all orders over $100, consectetur
+                            adipim scing elit.</p>
+                    </div>
+                </div>
+                <div class="return__first-part">
+                    <!-- SVG ICON for free shiping -->
+                    <svg class="return__icon" width="43" height="30" viewBox="0 0 34 34" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3.06927 15.8306V22.5655C3.06927 29.3004 5.8663 32.0004 12.8433 32.0004H21.2189C28.1959 32.0004 30.993 29.3004 30.993 22.5655V15.8306"
+                            stroke="#F8702C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M17.0388 16.9998C19.8824 16.9998 21.9802 14.7649 21.7005 12.0199L20.6749 2H13.4182L12.3771 12.0199C12.0974 14.7649 14.1951 16.9998 17.0388 16.9998Z"
+                            stroke="#F8702C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M26.844 16.9998C29.9829 16.9998 32.2827 14.5399 31.9719 11.5249L31.5368 7.39994C30.9774 3.49998 29.4235 2 25.3523 2H20.6129L21.7006 12.5149C21.9648 14.9899 24.2801 16.9998 26.844 16.9998Z"
+                            stroke="#F8702C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M7.15602 16.9998C9.71996 16.9998 12.0353 14.9899 12.2839 12.5149L12.6258 9.19992L13.3716 2H8.63223C4.561 2 3.00709 3.49998 2.44769 7.39994L2.02813 11.5249C1.71735 14.5399 4.01713 16.9998 7.15602 16.9998Z"
+                            stroke="#F8702C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M17.0388 24.5C14.4438 24.5 13.1541 25.745 13.1541 28.25V31.9999H20.9236V28.25C20.9236 25.745 19.6338 24.5 17.0388 24.5Z"
+                            stroke="#F8702C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <div class="return__text">
+                        <h2 class="return__title">Free Shipping</h2>
+                        <p class="return__paragraph">If Goods have problems, consectetur
+                            adipim scing elit.</p>
+                    </div>
+                </div>
+                <div class="return__first-part">
+                    <!-- SVG ICON for International Warrenty -->
+                    <svg class="return__icon" width="43" height="30" viewBox="0 0 34 34" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.5 32H21.5C29 32 32 29 32 21.5V12.5C32 5 29 2 21.5 2H12.5C5 2 2 5 2 12.5V21.5C2 29 5 32 12.5 32Z"
+                            stroke="#F8702C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M24.5 2.66016V17.6302C24.5 20.5852 22.385 21.7402 19.79 20.1802L17.81 18.9952C17.36 18.7252 16.64 18.7252 16.19 18.9952L14.21 20.1802C11.615 21.7252 9.5 20.5852 9.5 17.6302V2.66016"
+                            stroke="#F8702C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M12.5 32H21.5C29 32 32 29 32 21.5V12.5C32 5 29 2 21.5 2H12.5C5 2 2 5 2 12.5V21.5C2 29 5 32 12.5 32Z"
+                            stroke="#F8702C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M24.5 2.66016V17.6302C24.5 20.5852 22.385 21.7402 19.79 20.1802L17.81 18.9952C17.36 18.7252 16.64 18.7252 16.19 18.9952L14.21 20.1802C11.615 21.7252 9.5 20.5852 9.5 17.6302V2.66016"
+                            stroke="#F8702C" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <div class="return__text">
+                        <h2 class="return__title">International Warranty</h2>
+                        <p class="return__paragraph">100% secure payment, consectetur
+                            adipim scing elit.</p>
+                    </div>
                 </div>
             </div>
         </div>
