@@ -1,0 +1,90 @@
+@import "./base/mixin";
+@import "./base/variables";
+
+@font-face {
+    font-family: nunito;
+    src: url(/assets/fonts/Nunito-Bold.ttf);
+    src: url(/assets/fonts/Nunito-ExtraBold.ttf);
+    src: url(/assets/fonts/Nunito-SemiBold.ttf);
+    src: url(/assets/fonts/Nunito-Medium.ttf);
+}
+
+@font-face {
+    font-family: inter;
+    src: url(/assets/fonts/Inter-Bold.ttf);
+    src: url(/assets/fonts/Inter-ExtraBold.ttf);
+    src: url(/assets/fonts/Inter-SemiBold.ttf);
+    src: url(/assets/fonts/Inter-Regular.ttf);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, a, p {
+    font-family: nunito;
+}
+
+/*----------------------------------------------------------------
+>>> BLOG SECTION:
+----------------------------------------------------------------*/
+.blog{
+    &__full{
+        margin-top: 120px;
+    }
+    &__top-part{
+        text-align: center;
+    }
+    &__paragraph{
+        color: $primaryColorOrange;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 10px;
+    }
+    &__header-txt{
+        color: $headerFontColor ;
+        font-size: 46px;
+        font-weight: 800;
+    }
+
+    &__full-part{
+        // display: flex;
+    }
+
+    &__part-1{
+        position: relative;
+        // margin-right: 15px;
+    }
+
+    &__image{
+        position: absolute;
+        left: -35px;
+        top: 45px;
+     }
+
+    &__image-txt{
+        color: $headerFontColor;
+        font-size: 15px;
+        font-weight: 400;
+        transform: rotate(-90deg);
+        background-color: white;
+        padding: 8px;
+    }
+
+    &__blog-title{
+        max-width: 320px;
+    }
+
+    &__content{
+        color: $headerFontColor;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    &__image-1{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+}

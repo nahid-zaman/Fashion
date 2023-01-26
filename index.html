@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="assets/saas/fontawesome.min.css">
     <link rel="stylesheet" href="assets/saas/all.min.css">
     <link rel="stylesheet" href="assets/saas/app.css">
-    <link rel="stylesheet" href="assets/js/app.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <title>Fashion</title>
 </head>
 
@@ -98,57 +97,92 @@
                         <a href="#" class="site-header__categories-txt">All Categories</a>
                         <i class="fa-solid fa-chevron-right site-header__arrow"></i>
                     </div>
-                    <nav id="primary_nav_wrap">
+                </div>
+                <!-- <nav id="primary_nav_wrap">
                         <ul>
                             <li class="current-menu-item"><a href="#">Home</a></li>
                             <li><a href="#">Shop</a>
-                                <ul>
-                                    <li><a href="#">Sub Menu 1</a></li>
-                                    <li><a href="#">Sub Menu 2</a></li>
-                                    <li><a href="#">Sub Menu 3</a></li>
-                                    <li><a href="#">Sub Menu 4</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Sub Menu 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Sub Menu 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Sub Menu 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Sub Menu 4</a>
                                         <ul>
-                                            <li><a href="#">Deep Menu 1</a>
-                                                <ul>
+                                            <li><a class="dropdown-item" href="#">Deep Menu 1</a>
+                                                <ul class="dropdown-menu">
                                                     <li><a href="#">Sub Deep 1</a></li>
                                                     <li><a href="#">Sub Deep 2</a></li>
                                                     <li><a href="#">Sub Deep 3</a></li>
                                                     <li><a href="#">Sub Deep 4</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="#">Deep Menu 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Deep Menu 2</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Sub Menu 5</a></li>
+                                    <li><a class="dropdown-item" href="#">Sub Menu 5</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Product</a>
-                                <ul>
-                                    <li><a href="#">Sub Menu 1</a></li>
-                                    <li><a href="#">Sub Menu 2</a></li>
-                                    <li><a href="#">Sub Menu 3</a></li>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Sub Menu 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Sub Menu 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Sub Menu 3</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Blog</a>
-                                <ul>
+                                <ul class="dropdown-menu">
                                     <li class="dir"><a href="#">Sub Menu 1</a></li>
                                     <li class="dir"><a href="#">Sub Menu 2</a>
-                                        <ul>
-                                            <li><a href="#">Category 1</a></li>
-                                            <li><a href="#">Category 2</a></li>
-                                            <li><a href="#">Category 3</a></li>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Category 1</a></li>
+                                            <li><a class="dropdown-item" href="#">Category 2</a></li>
+                                            <li><a class="dropdown-item" href="#">Category 3</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Sub Menu 3</a></li>
-                                    <li><a href="#">Sub Menu 4</a></li>
-                                    <li><a href="#">Sub Menu 5</a></li>
+                                    <li><a class="dropdown-item" href="#">Sub Menu 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Sub Menu 4</a></li>
+                                    <li><a class="dropdown-item" href="#">Sub Menu 5</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Pages</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
+                    </nav> -->
+
+
+                <div>
+                    <nav class="navbar navbar-expand-sm navbar-light">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#mynavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="mynavbar">
+                                <ul class="navbar-nav me-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="javascript:void(0)">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="javascript:void(0)">Shop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="javascript:void(0)">Product</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="javascript:void(0)">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="javascript:void(0)">Pages</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="javascript:void(0)">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </nav>
                 </div>
+
                 <div class="site-header__free-shipping">
                     <p class="site-header__free-shipping-text">Free Shipping on Orders $500+</p>
                 </div>
@@ -170,26 +204,52 @@
     </section>
 
     <!--==================================-->
-    <!--=            gallery Section     =-->
+    <!--=       Gallery Section          =-->
     <!--==================================-->
-    <!-- <section class="gallery">
-        <div class="gallery__grid-container">
-            <div class="gallery__item1"><img src="/static/media/image.png" alt="image"></div>
-            <div class="gallery__grid-right">
-                <div class="gallery__item2"><img src="/static/media/image-1.png" alt="image"></div>
-                <div class="gallery__item3"><img src="/static/media/image-2.png" alt="image"></div>
+    <section class="gallery">
+        <div class="row g-4 gallery__row">
+            <div class="col-lg-6 col-md-6 col-sm-12 gallery__left-column">
+                <img src="/static/media/Gallery/image.png" alt="image">
+                <div class="gallery__image-txt">
+                    <h3>Man Jacket</h3>
+                    <p>Explore Product</p>
+                </div>
             </div>
-            <div class="gallery__item4"><img src="/static/media/image-3.png" alt="image"></div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="row g-4">
+                    <div class="col-lg-6 col-md-6 col-sm-12 gallery__left-column">
+                        <img src="/static/media/Gallery/image-1.png" alt="image">
+                        <div class="gallery__image-txt">
+                            <h3>Summer Fragrances</h3>
+                            <p>Explore Product</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 gallery__left-column">
+                        <img src="/static/media/Gallery/image-2.png" alt="image">
+                        <div class="gallery__image-txt">
+                            <h3>Men’s Shirt</h3>
+                            <p>Explore Product</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 gallery__left-column">
+                        <img src="/static/media/Gallery/image-3.png" alt="image">
+                        <div class="gallery__image-txt">
+                            <h3>Women’s Dresses</h3>
+                            <p>Explore Product</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section> -->
+    </section>
 
     <!--==================================-->
-    <!--=            card Section     =-->
+    <!--=            Card Section        =-->
     <!--==================================-->
     <section class="card-section">
         <div class="container">
-            <div class="card-section__full">
-                <div class="card-section__left">
+            <div class="row card-section__full">
+                <div class="col-lg-6 col-md-12 col-sm-12 p-0 card-section__left">
                     <div class="card-section__image">
                         <img src="/static/media/image-card.png" alt="">
                     </div>
@@ -202,43 +262,42 @@
                     </div>
                 </div>
 
-                <div class="card-section__right">
-                    <div class="card-section__right-top">
-                        <div class="card">
+                <div class="col-lg-6 col-md-12 col-sm-12 card-section__right">
+                    <div class="row card-section__right-top">
+                        <div class="col-lg-4 col-md-4 col-sm-12 card">
                             <div class="card-body">
                                 <i class="fa-solid fa-wallet card-section__wallet"></i><br>
                                 <h6 class="card-title">Wallet and
                                     Bags</h6>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="col-lg-4 col-md-4 col-sm-12 card">
                             <div class="card-body">
                                 <i class="fa-solid fa-wallet card-section__wallet"></i><br>
                                 <h6 class="card-title">Beach Slippers</h6>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="col-lg-4 col-md-4 col-sm-12 card">
                             <div class="card-body">
                                 <i class="fa-solid fa-wallet card-section__wallet"></i><br>
                                 <h6 class="card-title">Sunglass & Eyewear</h6>
                             </div>
                         </div>
-                    </div>
-                    <!-- bottom part -->
-                    <div class="card-section__right-bottom">
-                        <div class="card">
+
+                        <!-- bottom part -->
+                        <div class="col-lg-4 col-md-4 col-sm-12 card">
                             <div class="card-body">
                                 <i class="fa-solid fa-wallet card-section__wallet"></i><br>
                                 <h6 class="card-title">Summer Shorts</h6>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="col-lg-4 col-md-4 col-sm-12 card">
                             <div class="card-body">
                                 <i class="fa-solid fa-wallet card-section__wallet"></i><br>
                                 <h6 class="card-title">Travel Accessories</h6>
                             </div>
                         </div>
-                        <div class="card">
+                        <div class="col-lg-4 col-md-4 col-sm-12 card">
                             <div class="card-body">
                                 <i class="fa-solid fa-wallet card-section__wallet"></i><br>
                                 <h6 class="card-title">Shoes and Trainers</h6>
@@ -247,7 +306,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 
@@ -258,8 +316,8 @@
         <div class="container">
             <p class="collection__text">Collections</p>
             <h1 class="collection__header">Populer Collections</h1>
-            <div class="collection__row">
-                <div class="col-md-3 collection__item">
+            <div class="row collection__row">
+                <div class="col-sm-12 col-md-3 col-lg-3 collection__item">
                     <div class="collection__product">
                         <div class="collection__offer-txt">
                             <p class="collection__offer-txt-number">-20%</p>
@@ -278,7 +336,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 collection__item">
+                <div class="col-sm-12 col-md-3 col-lg-3 collection__item">
                     <div class="collection__product">
                         <div class="collection__offer-txt">
                             <p class="collection__offer-txt-number">-20%</p>
@@ -319,12 +377,13 @@
                                     <path d="M7.07878 9.99992H7.08626" stroke="white" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
                                 </svg>
-                                Add to Cart</a>
+                                Add to Cart
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 collection__item">
+                <div class="col-sm-12 col-md-3 col-lg-3 collection__item">
                     <div class="collection__product">
                         <div class="collection__offer-txt">
                             <p class="collection__offer-txt-number">-20%</p>
@@ -342,7 +401,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 collection__item">
+                <div class="col-sm-12 col-md-3 col-lg-3 collection__item">
                     <div class="collection__product">
                         <div class="collection__offer-txt">
                             <p class="collection__offer-txt-number">-20%</p>
@@ -365,7 +424,7 @@
     </section>
 
     <!--==================================-->
-    <!--=      SELL Section        =-->
+    <!--=      SELL Section              =-->
     <!--==================================-->
     <section class="sell">
         <div class="container">
@@ -374,9 +433,9 @@
                     <img src="/static/media/image-angel_01.png" alt="image">
                 </div>
                 <div class="sell__txt">
-                    <h1 class="sell__txt-stroke1">Sell</h1>
-                    <h1 class="sell__txt-stroke2">Sell</h1>
-                    <h1 class="sell__txt-stroke3">Sell</h1>
+                    <h1 class="sell__txt-stroke1">Sale</h1>
+                    <h1 class="sell__txt-stroke2">Sale</h1>
+                    <h1 class="sell__txt-stroke3">Sale</h1>
                 </div>
                 <div class="sell__offer-txt">
                     <p class="sell__up-to">Up To</p><br>
@@ -395,12 +454,107 @@
     </section>
 
     <!--==================================-->
+    <!--=      PRODUCT LIST Section      =-->
+    <!--==================================-->
+    <section class="product-list">
+        <div class="container">
+            <div class="row">
+                <!-- first column -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="product-list__header">
+                        <h3 class="product-list__header-list">Recent Product</h3>
+                    </div>
+                    <div class="product-list__full">
+                        <div class="product-list__content d-flex">
+                            <img src="/static/media/sneaker.jpg" alt="image">
+                            <div class="product-list__product-details">
+                                <h3>Men Casual Snaker</h3>
+                                <p>$110.99</p>
+                            </div>
+                        </div>
+                        <div class="product-list__content d-flex">
+                            <img src="/static/media/sneaker.jpg" alt="image">
+                            <div class="product-list__product-details">
+                                <h3>Bitter Purple Anaconda</h3>
+                                <p>$120.99</p>
+                            </div>
+                        </div>
+                        <div class="product-list__content d-flex">
+                            <img src="/static/media/sneaker.jpg" alt="image">
+                            <div class="product-list__product-details">
+                                <h3>Jelly Dangerous Ostrich</h3>
+                                <p>$150.99</p>
+                            </div>
+                        </div>
+                        <div class="product-list__content d-flex">
+                            <img src="/static/media/sneaker.jpg" alt="image">
+                            <div class="product-list__product-details">
+                                <h3>Full Swift Nitrogen</h3>
+                                <p>$100.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- second column -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="product-list__header">
+                        <h3 class="product-list__header-list">On Sale</h3>
+                    </div>
+                    <div class="product-list__full">
+                        <div class="product-list__content d-flex">
+                            <img src="/static/media/sneaker.jpg" alt="image">
+                            <div class="product-list__product-details">
+                                <h3>Tidy Skilled Creek</h3>
+                                <p>$110.99</p>
+                            </div>
+                        </div>
+                        <div class="product-list__content d-flex">
+                            <img src="/static/media/sneaker.jpg" alt="image">
+                            <div class="product-list__product-details">
+                                <h3>Bitter Purple Anaconda</h3>
+                                <p>$110.99</p>
+                            </div>
+                        </div>
+                        <div class="product-list__content d-flex">
+                            <img src="/static/media/sneaker.jpg" alt="image">
+                            <div class="product-list__product-details">
+                                <h3>Dangerous Ostrich</h3>
+                                <p>$110.99</p>
+                            </div>
+                        </div>
+                        <div class="product-list__content d-flex">
+                            <img src="/static/media/sneaker.jpg" alt="image">
+                            <div class="product-list__product-details">
+                                <h3>Full Swift Nitrogen</h3>
+                                <p>$110.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Third column -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="product-list__background-img">
+                        <img src="/static/media/background/shape_bg.png" alt="image">
+                        <div class="product-list__img-content">
+                            <p>Spring Accessories</p>
+                            <h3>Minimal Fashion
+                                Boy’s T-Shirt.</h3>
+                            <a href="#">Explore Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--==================================-->
     <!--=          RETURN Section        =-->
     <!--==================================-->
     <section class="return">
         <div class="container">
-            <div class="return__full-part">
-                <div class="return__first-part">
+            <div class="row return__full-part">
+                <div class="col-lg-4 col-md-12 col-sm-12 return__first-part">
                     <!-- SVG ICON for 30 days return -->
                     <svg class="return__icon" width="40" height="24" viewBox="0 0 34 28" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -417,7 +571,7 @@
                             adipim scing elit.</p>
                     </div>
                 </div>
-                <div class="return__first-part">
+                <div class="col-lg-4 col-md-12 col-sm-12 return__first-part">
                     <!-- SVG ICON for free shiping -->
                     <svg class="return__icon" width="43" height="30" viewBox="0 0 34 34" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -443,7 +597,7 @@
                             adipim scing elit.</p>
                     </div>
                 </div>
-                <div class="return__first-part">
+                <div class="col-lg-4 col-md-12 col-sm-12 return__first-part">
                     <!-- SVG ICON for International Warrenty -->
                     <svg class="return__icon" width="43" height="30" viewBox="0 0 34 34" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -469,6 +623,367 @@
             </div>
         </div>
     </section>
+
+    <!--==================================-->
+    <!--=          Cart Section          =-->
+    <!--==================================-->
+    <section class="cart">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 cart__image">
+                    <img src="/static/media/Cart Product/green-front-sweater 1.png" alt="">
+                </div>
+                <div class="cart__content col-lg-6">
+                    <h3>East Hampton Fleece Hoodi</h3>
+                    <p>$510.99 <small>Tax Included</small> </p>
+                    <!-- for color -->
+                    <div class="cart__color-section d-flex">
+                        <h3>Color:</h3>
+                        <div class="cart__color-parent">
+                            <div class="cart__colors"></div>
+                        </div>
+                        <div class="cart__color-parent1">
+                            <div class="cart__colors1"></div>
+                        </div>
+                        <div class="cart__color-parent2">
+                            <div class="cart__colors2"></div>
+                        </div>
+                    </div>
+                    <!-- for sizes -->
+                    <div class="sizes mt-3 d-flex">
+                        <h3 class="text">Size:</h3>
+                        <label class="radio"> <input type="radio" name="size" value="M"> <span>M</span> </label>
+                        <label class="radio"> <input type="radio" name="size" value="L"> <span>L</span> </label>
+                        <label class="radio"> <input type="radio" name="size" value="XL"> <span>XL</span> </label>
+                    </div>
+                    <div class="cart__text-section d-flex">
+                        <svg class="cart__icon-txt" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 7.23V2.47C15 1.42 14.552 1 13.439 1H10.611C9.49805 1 9.05005 1.42 9.05005 2.47V7.23C9.05005 8.28 9.49805 8.7 10.611 8.7H13.439C14.552 8.7 15 8.28 15 7.23Z"
+                                stroke="#F8702C" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M15 13.5303V12.2703C15 11.2203 14.552 10.8003 13.439 10.8003H10.611C9.49805 10.8003 9.05005 11.2203 9.05005 12.2703V13.5303C9.05005 14.5803 9.49805 15.0003 10.611 15.0003H13.439C14.552 15.0003 15 14.5803 15 13.5303Z"
+                                stroke="#F8702C" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M6.95 8.77029V13.5303C6.95 14.5803 6.502 15.0003 5.389 15.0003H2.561C1.448 15.0003 1 14.5803 1 13.5303V8.77029C1 7.72029 1.448 7.30029 2.561 7.30029H5.389C6.502 7.30029 6.95 7.72029 6.95 8.77029Z"
+                                stroke="#F8702C" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M6.95 2.47V3.73C6.95 4.78 6.502 5.2 5.389 5.2H2.561C1.448 5.2 1 4.78 1 3.73V2.47C1 1.42 1.448 1 2.561 1H5.389C6.502 1 6.95 1.42 6.95 2.47Z"
+                                stroke="#F8702C" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <a href="#">Size Guide</a>
+                        <svg class="cart__icon-txt" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.1 1V8C10.1 8.77 9.47 9.4 8.7 9.4H1V3.8C1 2.253 2.253 1 3.8 1H10.1Z"
+                                stroke="#F8702C" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M15 9.4001V11.5001C15 12.6621 14.062 13.6001 12.9 13.6001H12.2C12.2 12.8301 11.57 12.2001 10.8 12.2001C10.03 12.2001 9.4 12.8301 9.4 13.6001H6.6C6.6 12.8301 5.97 12.2001 5.2 12.2001C4.43 12.2001 3.8 12.8301 3.8 13.6001H3.1C1.938 13.6001 1 12.6621 1 11.5001V9.4001H8.7C9.47 9.4001 10.1 8.7701 10.1 8.0001V3.1001H11.388C11.892 3.1001 12.354 3.3731 12.606 3.8071L13.803 5.9001H12.9C12.515 5.9001 12.2 6.2151 12.2 6.6001V8.7001C12.2 9.0851 12.515 9.4001 12.9 9.4001H15Z"
+                                stroke="#F8702C" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M5.20005 14.9997C5.97325 14.9997 6.60005 14.3729 6.60005 13.5997C6.60005 12.8265 5.97325 12.1997 5.20005 12.1997C4.42685 12.1997 3.80005 12.8265 3.80005 13.5997C3.80005 14.3729 4.42685 14.9997 5.20005 14.9997Z"
+                                stroke="#F8702C" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M10.8 14.9997C11.5732 14.9997 12.2 14.3729 12.2 13.5997C12.2 12.8265 11.5732 12.1997 10.8 12.1997C10.0268 12.1997 9.40002 12.8265 9.40002 13.5997C9.40002 14.3729 10.0268 14.9997 10.8 14.9997Z"
+                                stroke="#F8702C" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M15 7.9999V9.3999H12.9C12.515 9.3999 12.2 9.0849 12.2 8.6999V6.5999C12.2 6.2149 12.515 5.8999 12.9 5.8999H13.803L15 7.9999Z"
+                                stroke="#F8702C" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <a href="#">Shipping</a>
+
+                        <svg class="cart__icon-txt" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.1972 7.14298V9.93843C12.1972 10.1201 12.1902 10.2949 12.1692 10.4626C12.008 12.3495 10.8939 13.286 8.84084 13.286H8.56056C8.38539 13.286 8.21721 13.3698 8.1121 13.5096L7.27128 14.6278C6.8999 15.124 6.29729 15.124 5.92592 14.6278L5.08507 13.5096C4.99398 13.3908 4.79079 13.286 4.63664 13.286H4.35636C2.12113 13.286 1 12.7339 1 9.93843V7.14298C1 5.0953 1.94595 3.98411 3.83084 3.82337C3.999 3.8024 4.17418 3.79541 4.35636 3.79541H8.84084C11.0761 3.79541 12.1972 4.9136 12.1972 7.14298Z"
+                                stroke="#F8702C" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M15 4.34757V7.14302C15 9.19768 14.054 10.3019 12.1691 10.4626C12.1902 10.2949 12.1972 10.1202 12.1972 9.93848V7.14302C12.1972 4.91365 11.076 3.79546 8.84081 3.79546H4.35634C4.17415 3.79546 3.99898 3.80245 3.83081 3.82342C3.99197 1.94347 5.10609 1 7.15914 1H11.6436C13.8788 1 15 2.11819 15 4.34757Z"
+                                stroke="#F8702C" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M9.05496 8.86213H9.06127" stroke="#F8702C" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M6.60245 8.86213H6.60875" stroke="#F8702C" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.15005 8.86213H4.15636" stroke="#F8702C" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        <a href="#">Ask About This Product</a>
+                    </div>
+
+                    <div class=" cart__btn-cart d-flex">
+                        <div class="cart__header">
+                            <p>Quantity</p>
+                        </div>
+                        <div class="d-flex align-items-center count">
+                            <span><i class="fa-solid fa-minus"></i></span>
+                            <h4>02</h4>
+                            <span> <i class="fa-solid fa-plus"></i></span>
+                        </div>
+                        <div class="cart__btn-section">
+                            <a href="#" class="cart__btn">
+                                <!-- SVG for Add to cart BAG ICON -->
+                                <svg class="collection__icon-cart" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.25 6.39167V5.58334C6.25 3.70834 7.75833 1.86667 9.63333 1.69167C11.8667 1.47501 13.75 3.23334 13.75 5.42501V6.57501"
+                                        stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M7.49998 18.3334H12.5C15.85 18.3334 16.45 16.9917 16.625 15.3584L17.25 10.3584C17.475 8.32508 16.8916 6.66675 13.3333 6.66675H6.66664C3.10831 6.66675 2.52498 8.32508 2.74998 10.3584L3.37498 15.3584C3.54998 16.9917 4.14998 18.3334 7.49998 18.3334Z"
+                                        stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M12.9129 9.99992H12.9204" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.07878 9.99992H7.08626" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Add to Cart
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cart__terms">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        <span>I agree with the terms and conditions.</span>
+                    </div>
+
+                    <div class="cart__buy-now-btn">
+                        <a href="#">Buy It Now</a>
+                    </div>
+
+                    <div class="cart__wishlist d-flex">
+                        <svg class="cart__flex-txt" width="18" height="16" viewBox="0 0 18 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.496 14.9292C9.224 15.0236 8.776 15.0236 8.504 14.9292C6.184 14.1506 1 10.9022 1 5.39663C1 2.96629 2.992 1 5.448 1C6.904 1 8.192 1.69214 9 2.7618C9.808 1.69214 11.104 1 12.552 1C15.008 1 17 2.96629 17 5.39663C17 10.9022 11.816 14.1506 9.496 14.9292Z"
+                                stroke="#F8702C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <a href="#">Add to Wishlist</a>
+                        <svg class="cart__flex-txt" width="18" height="16" viewBox="0 0 18 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1 13.2453L3.2654 13.254C4.07384 13.254 4.82898 12.8593 5.27318 12.2014L10.95 3.7979C11.3942 3.14001 12.1493 2.73649 12.9578 2.74526L17 2.76282"
+                                stroke="#F8702C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M15.2144 15L16.9911 13.2456" stroke="#F8702C" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M6.23266 5.03522L5.27318 3.71942C4.8201 3.09662 4.0916 2.7282 3.3187 2.73697L1 2.74575"
+                                stroke="#F8702C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M9.8573 10.9648L10.9411 12.342C11.3942 12.921 12.1049 13.2631 12.8512 13.2631L17 13.2455"
+                                stroke="#F8702C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M16.9911 2.75439L15.2144 1" stroke="#F8702C" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <a href="#">Add to Compare</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================================-->
+    <!--=          BLOG Section          =-->
+    <!--==================================-->
+    <section class="blog">
+        <div class="container">
+            <div class="blog__full">
+                <div class="blog__top-part">
+                    <p class="blog__paragraph">Recent Article</p>
+                    <h2 class="blog__header-txt">From Our Blog</h2>
+                </div>
+                <div class="row g-3 blog__full-part">
+                    <div class="col-sm-12 col-md-6 col-lg-3 blog__part-1">
+                        <img class="blog__image-1" src="/static/media/Blog/01.png" alt="image">
+                        <div class="blog__image">
+                            <p class="blog__image-txt">January 10, 2022</p>
+                        </div>
+                        <div class="blog__blog-title">
+                            <p class="blog__content">Dolor sit amet, consectetur adipiscing eliyt sed.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 blog__part-1">
+                        <img class="blog__image-1" src="/static/media/Blog/02.png" alt="image">
+                        <div class="blog__image">
+                            <p class="blog__image-txt">January 12, 2022</p>
+                        </div>
+                        <div class="blog__blog-title">
+                            <p class="blog__content">Dolor sit amet, consectetur adipiscing eliyt sed.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 blog__part-1">
+                        <img class="blog__image-1" src="/static/media/Blog/03.png" alt="image">
+                        <div class="blog__image">
+                            <p class="blog__image-txt">January 15, 2022</p>
+                        </div>
+                        <div class="blog__blog-title">
+                            <p class="blog__content">Dolor sit amet, consectetur adipiscing eliyt sed.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 blog__part-1">
+                        <img class="blog__image-1" src="/static/media/Blog/04.png" alt="image">
+                        <div class="blog__image">
+                            <p class="blog__image-txt">January 20, 2022</p>
+                        </div>
+                        <div class="blog__blog-title">
+                            <p class="blog__content">Dolor sit amet, consectetur adipiscing eliyt sed.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================================-->
+    <!--=      LOGO Slider Section       =-->
+    <!--==================================-->
+    <section class="companylogo">
+        <div class="container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/static/media/logo/1-1 2.svg" alt="logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/static/media/logo/4-3 (1) 3.svg" alt="logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/static/media/logo/5-3 (1) 2.svg" alt="logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/static/media/logo/2-1 (1) 1.svg" alt="logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/static/media/logo/3-4 2.svg" alt="logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/static/media/logo/1-1 2.svg" alt="logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/static/media/logo/4-3 (1) 3.svg" alt="logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/static/media/logo/5-3 (1) 2.svg" alt="logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/static/media/logo/2-1 (1) 1.svg" alt="logo">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/static/media/logo/3-4 2.svg" alt="logo">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================================-->
+    <!--=         FOOTER Section         =-->
+    <!--==================================-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row site-footer__top">
+                <div class="col-lg-4 col-md-12 col-sm-12 site-footer__footer-logo">
+                    <img class="site-footer__footer-image" src="/static/media/logo.svg" alt="">
+                    <p class="site-footer__description">
+                        Quis nostrud exercitatin ullamc boris nisi ut aliquip ex ea commodo conse.
+                    </p>
+                    <div class="site-footer__social-icon">
+                        <a href="#" class="site-footer__facebook-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="site-footer__twitter-icon"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="site-footer__vimeo-icon"><i class="fa-brands fa-vimeo-v"></i></a>
+                        <a href="#" class="site-footer__linkedin-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- Footer Address -->
+                <div class="col-lg-3 col-md-12 col-sm-12 site-footer__address">
+                    <h3 class="site-footer__header ">Address</h3>
+                    <ul class="site-footer__addressbar">
+                        <li class="site-footer__location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>20, Awesome Road, New York, Usa 4D BS3</p>
+                        </li>
+                        <li class="site-footer__cell">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+123 456 7890</p>
+                        </li>
+                        <li class="site-footer__mail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>info@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Footer Support -->
+                <div class="col-lg-2 col-md-12 col-sm-12 site-footer__support">
+                    <ul class="site-footer__support-links">
+                        <li>
+                            <h3 class="site-footer__header">Support</h3>
+                        </li>
+                        <li><a href="">For Men</a></li>
+                        <li><a href="">For Women</a></li>
+                        <li><a href="">Accessories</a></li>
+                        <li><a href="">Collection</a></li>
+                    </ul>
+                </div>
+                <!-- Footer Newsletter -->
+                <div class="col-lg-3 col-md-12 col-sm-12 site-footer__newsletter">
+                    <h3 class="site-footer__header">Newsletter</h3>
+                    <p class="site-footer__description">Subscribe to the newsletter for all the latest update</p>
+
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Enter your email">
+                        </div>
+                    </form>
+                    <div class="site-footer__btn">
+                        <a href="#" class="site-footer__btn-subscribe">Subscribe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer__bottom">
+            <div class="container">
+                <div class="site-footer__content">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 d-flex align-items-center">
+                            <p class="site-footer__copyright">Copyrights By <span>NawabTech - 2022</span></p>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="site-footer__links-container">
+                                <ul class="site-footer__footer-links">
+                                    <li class="site-footer__payment">
+                                        <a href="#">
+                                            <img src="/static/media/footer-icon/PayPal 1.svg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li class="site-footer__payment">
+                                        <a href="#">
+                                            <img src="/static/media/footer-icon/Neteller-Logo 1.svg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li class="site-footer__payment">
+                                        <a href="#">
+                                            <img src="/static/media/footer-icon/MasterCard-Logo-1990 1.svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/app.js"></script>
 </body>
 
 </html>
